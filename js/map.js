@@ -112,7 +112,7 @@ function marker(map, latitude, longitude, n) {
 
 function onMarkerClick(map, marker, n){
     google.maps.event.addListener(marker, 'click', function(event) {
-        var html = '<iframe id="player" type="text/html" width="160" height="97.5" src="http://www.youtube.com/embed/' + locationList.list[n].videoId + '?enablejsapi=1&origin=http://example.com&autoplay=1" frameborder="0"></iframe>';
+        var html = '<iframe id="player" type="text/html" width="320" height="195" src="http://www.youtube.com/embed/' + locationList.list[n].videoId + '?enablejsapi=1&origin=http://example.com&autoplay=1" frameborder="0"></iframe>';
         var infoWindow = new google.maps.InfoWindow({
             content: '「' + locationList.list[n].title +  '」<br>　＠' + locationList.list[n].location + '<br>' + html
         });
